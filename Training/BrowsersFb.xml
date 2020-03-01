@@ -1,0 +1,29 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name = "FacebookTesting" >
+
+<listeners>
+<listener class-name="common.listenersFb"></listener>
+</listeners>
+
+<test name = "LoginFunctionalityC">
+
+<parameter name ="url" value = "https://facebook.com" ></parameter>
+
+<parameter name = "browser" value = "Chrome" ></parameter>
+
+<classes>
+<class name = "testingFacebook.LoginData"></class>
+</classes>
+</test>
+<test name = "LoginFunctionalityF">
+
+<parameter name ="url" value = "https://facebook.com" ></parameter>
+
+<parameter name = "browser" value = "firefox" ></parameter>
+
+<classes>
+<class name = "testingFacebook.LoginData"></class>
+</classes>
+</test>
+</suite>
